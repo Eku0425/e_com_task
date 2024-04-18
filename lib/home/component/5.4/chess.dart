@@ -1,7 +1,5 @@
 import '../method/chess_method.dart';
 import 'Package:flutter/Material.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 
 void main(){
   runApp(const MyApp());
@@ -30,10 +28,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return SafeArea(child:
     Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.red.shade900,
+          backgroundColor: Colors.lightBlue.shade900,
           centerTitle: true,
           leading: const Icon(
-            Icons.account_circle_sharp,
+            Icons.ad_units_sharp,
             color: Colors.white,
           ),
           title: const Text(
@@ -47,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: Align(
           child: Container(
-            height: 448,
+            height: 410,
             width: double.infinity,
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black, width: 4),
@@ -67,6 +65,90 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         )
     ),
+    );
+  }
+  Row row2() {
+    return Row(
+      children: [
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+      ],
+    );
+  }
+  Row row1() {
+    return Row(
+      children: [
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+          color: Colors.blue.shade900,
+        ),
+        Container(
+          height: 50,
+          width: 50,
+        ),
+      ],
     );
   }
 }
