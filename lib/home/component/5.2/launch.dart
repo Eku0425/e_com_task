@@ -6,9 +6,9 @@ void main() {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Color(0xff48416A),
+          backgroundColor: Colors.black,
           appBar: AppBar(
-            backgroundColor: Color(0xff383253),
+            backgroundColor: Colors.green,
             centerTitle: true,
             leading: const Icon(
               Icons.inbox,
@@ -16,7 +16,7 @@ void main() {
               size: 30,
             ),
             title: const Text(
-              'Gradient Button',
+              'Launch Button',
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 color: Colors.white,
@@ -37,24 +37,24 @@ void main() {
             alignment: Alignment.center,
             child: Container(
               alignment: Alignment.center,
-              height: 75,
-              width: 230,
+              height: 200,
+              width: 200,
               decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border.all(color: Colors.white, width: 2),
-                gradient: const LinearGradient(
-                    colors: [
-                      Color(0xff942DB4),
-                      Color(0xff2C8BEC),
-                    ]
-                ),
-                borderRadius: const BorderRadius.all(Radius.circular(30)),
+                color: Colors.black,
+                border: Border.all(color: Colors.white, width: 1),
+                boxShadow:  [
+                  BoxShadow(
+                    color: Colors.greenAccent.shade700,
+                    spreadRadius: 7,
+                    blurRadius: 15,
+                  ),
+                ],
+                shape: BoxShape.circle,
               ),
               child: const Text(
-                'Flutter',
+                'GO',
                 style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.w500,
+                  fontSize: 35,
                   color: Colors.white,
                 ),
               ),
